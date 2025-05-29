@@ -4,7 +4,6 @@
 #- A calculadora deve solicitar ao usuario que insira dois numeros e uma operacao.
 #- As operacoes validas sao: + (adicao), - (subtracao), * (multiplicacao) e / (divisao).
 #- O programa deve continuar solicitando entradas ate que uma operacao valida seja concluida.
-
 while True:
     try:
         #Solicita ao user dois números e converte para float

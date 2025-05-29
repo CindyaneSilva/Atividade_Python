@@ -1,0 +1,19 @@
+# Crie um programa que permita a um professor registrar as notas de uma turma. 
+# O programa deve continuar solicitando notas ate que o professor digite 'fim'. 
+# Notas vÃ¡lidas sÃ£o de 0 a 10. 
+# O programa deve ignorar notas invalidas e continuar solicitando. 
+# No final, deve exibir a mÃ©dia da turma. Notas = [] -> len(Notas)
+
+notas = []
+entrada = input("Digite uma nota ou digite'fim' para encerrar: ").lower()
+
+while entrada != 'fim':
+    try:
+     notas.append(float(entrada.replace(',', '.'))) # aceitar a vírgula
+
+    except ValueError:
+       print("Nota inválida!")
+
+    entrada = input("Digite uma nota ou 'fim' para encerrar: ").lower()
+
+    print("notas registradas: ", (len(notas)))
